@@ -20,9 +20,16 @@ class SecondTabPage extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           ElevatedButton(
+            child: const Text('to third tab'),
+            onPressed: () {
+              context.navigateTo(const ThirdTabRoute());
+            },
+          ),
+          ElevatedButton(
             child: const Text('to fourth tab'),
             onPressed: () {
-              context.navigateTo(const FourthTabRoute());
+              // Same as above
+              context.router.navigate(const FourthTabRoute());
             },
           ),
         ],
