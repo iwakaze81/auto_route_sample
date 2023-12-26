@@ -9,7 +9,7 @@ jobs:
     steps:
       - run: |
           mkdir data
-          echo "<a href="auto_router_sample://app/test/detail" target="_blank" rel="noopener noreferrer">Custom URL Scheme Test</a>" > data/index.html
+          echo "<a href="autoroutersample://app/test/detail" target="_blank" rel="noopener noreferrer">Custom URL Scheme Test</a>" > data/index.html
       - uses: actions/upload-artifact@v3
         with:
           name: my_site
